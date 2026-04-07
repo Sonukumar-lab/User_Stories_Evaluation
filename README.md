@@ -165,8 +165,8 @@ ml-evaluation-frontend/
 ### 1. Clone Repository
 
 ```
-git clone <your-repo-url>
-cd ml-evaluation-backend
+git clone https://github.com/Sonukumar-lab/User_Stories_Evaluation
+cd backend
 ```
 
 ---
@@ -201,7 +201,7 @@ http://localhost:8080
 ### 1. Open Frontend Folder
 
 ```
-cd ml-evaluation-frontend
+cd frontend
 ```
 
 ---
