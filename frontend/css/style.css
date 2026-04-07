@@ -1,0 +1,305 @@
+body {
+
+    margin: 0;
+    font-family: Segoe UI;
+    background: #0f172a;
+    color: white;
+
+}
+
+header {
+
+    background: linear-gradient(90deg, #6366f1, #22c55e);
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    height: 70px;
+
+}
+
+.container {
+
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+
+}
+
+.upload-card {
+
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+
+}
+
+input,
+select {
+
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+
+}
+
+button {
+
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+button:hover {
+
+    background: #4f46e5;
+
+}
+
+.metrics-grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+
+}
+
+.metric {
+
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+.metric p {
+
+    font-size: 28px;
+    font-weight: bold;
+    color: #38bdf8;
+
+}
+
+.chart-section {
+
+    background: #1e293b;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.table-section {
+
+    background: #1e293b;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th {
+
+    background: #6366f1;
+    padding: 12px;
+
+}
+
+td {
+
+    padding: 5px;
+    border-bottom: 1px solid #334155;
+    text-align: center;
+    width: 350px;
+
+}
+
+tr:hover {
+
+    background: #334155;
+
+}
+
+.badge-true {
+
+    background: #22c55e;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-right: 4px;
+
+}
+
+.badge-false {
+
+    background: #ef4444;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-right: 4px;
+
+}
+
+.tick {
+
+    color: #22c55e;
+    font-size: 18px;
+    margin-right: 5px;
+
+}
+
+.cross {
+
+    color: #ef4444;
+    font-size: 18px;
+    margin-right: 5px;
+
+}
+
+.criteria-grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+
+}
+
+.criteria-card {
+
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+}
+
+.criteria-card h3 {
+
+    margin-bottom: 10px;
+    color: #38bdf8;
+
+}
+
+.criteria-card canvas {
+
+    max-height: 200px;
+
+}
+.charts-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+
+/* buttons */
+button{
+background:#6366f1;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#4f46e5;
+}
+
+/* overlay (background dim) */
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:1000;
+}
+
+
+/* 🔥 actual popup box (SMALL SIZE) */
+.popup-box{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+
+width:500px;        /* fixed width */
+max-width:90%;      /* responsive */
+
+max-height:300px;   /* 🔥 limit height */
+overflow-y:auto;    /* scroll inside */
+
+color:white;
+position:relative;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+
+/* close button */
+.close{
+position:absolute;
+top:10px;
+right:15px;
+cursor:pointer;
+font-size:18px;
+}
+
+/* charts grid */
+.charts-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.chart-card{
+background:#0f172a;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+
+.action-buttons{
+display:flex;
+gap:6px;
+justify-content:center;
+}
+
+.reason-btn{
+background:#f59e0b;
+padding:5px 10px;
+font-size:12px;
+}
+
+.fix-btn{
+background:#22c55e;
+padding:5px 10px;
+font-size:12px;
+}

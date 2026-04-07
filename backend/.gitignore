@@ -1,0 +1,49 @@
+### Project Files ###
+HELP.md
+
+### Build Directories ###
+target/
+out/
+build/
+
+# Allow target/build inside src (if needed)
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### Maven Wrapper ###
+.mvn/wrapper/maven-wrapper.jar
+
+### STS (Spring Tool Suite) ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Environment Variables ###
+.env
+**/.env
+
+# Specifically ignore .env inside resources
+src/main/resources/.env
+src/test/resources/.env
